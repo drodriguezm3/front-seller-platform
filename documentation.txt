@@ -1,0 +1,164 @@
+# Documentación  Frontend
+
+## 1. Descripción General
+El frontend es una aplicación React que implementa una interfaz de usuario para un chatbot asistente inteligente. La aplicación permite a los usuarios mantener conversaciones con el bot y recibir recomendaciones de productos.
+
+## 2. Estructura del Proyecto
+
+### 2.1 Directorios Principales
+frontend/
+├── public/ # Archivos estáticos y HTML base
+├── src/ # Código fuente principal
+│ ├── components/ # Componentes React reutilizables
+│ ├── pages/ # Páginas/rutas principales
+│ ├── styles/ # Archivos CSS
+│ └── utils/ # Utilidades y helpers
+
+
+
+### 2.2 Componentes Principales
+
+#### Chat.js
+- Maneja la lógica de conversación con el chatbot
+- Gestiona sesiones de chat
+- Implementa envío/recepción de mensajes
+- Integración con API backend
+
+#### MainContent.js
+- Componente principal de la interfaz
+- Maneja la visualización de mensajes
+- Implementa la entrada de texto
+- Gestiona el estado de carga
+
+#### Sidebar.js
+- Muestra historial de conversaciones
+- Permite navegación entre chats
+- Muestra información del perfil
+
+#### Recommendations.js
+- Muestra productos recomendados
+- Organiza productos por categorías
+- Visualiza detalles de productos
+
+## 3. Tecnologías Utilizadas
+
+### 3.1 Dependencias Principales
+- React v19.0.0
+- React Router DOM v7.2.0
+- Ant Design v5.24.1
+- Tailwind CSS v4.0.8
+- Recharts v2.15.1
+- Radix UI
+
+### 3.2 Herramientas de Desarrollo
+- Create React App
+- ESLint
+- Jest para testing
+- PostCSS
+- Autoprefixer
+
+## 4. Configuración
+
+
+
+### 4.2 Proxy
+Configurado para comunicarse con backend en puerto 8000
+
+## 5. Autenticación y Seguridad
+
+### 5.1 Sistema de Tokens
+- JWT para autenticación
+- Almacenamiento en localStorage
+- Rutas protegidas mediante ProtectedRoute
+
+### 5.2 CSRF Protection
+- Implementación de tokens CSRF
+- Utilidad getCSRFToken en utils/
+
+## 6. Componentes UI Personalizados
+
+### 6.1 Elementos Base
+- Avatar
+- Button
+- Card
+- Input
+
+### 6.2 Estilos
+- Implementación con Tailwind CSS
+- Componentes estilizados personalizados
+- Diseño responsive
+
+## 7. Funcionalidades Principales
+
+### 7.1 Chat
+- Conversaciones en tiempo real
+- Historial de mensajes
+- Gestión de sesiones
+- Indicadores de estado
+
+### 7.2 Recomendaciones
+- Sistema de ranking de productos
+- Visualización de características
+- Información de stock y precios
+- Categorización de recomendaciones
+
+## 8. API Integration
+
+### 8.1 Endpoints Principales
+/api/chatbot/session/new # Crear nueva sesión
+/api/chatbot/message # Enviar mensaje
+/api/chatbot/conversations # Obtener conversaciones
+
+
+
+### 8.2 Manejo de Respuestas
+- Gestión de errores
+- Parsing de respuestas
+- Actualización de estado
+
+## 9. Testing
+
+### 9.1 Tests Unitarios
+- Jest como framework
+- Testing Library para componentes
+- Cobertura de componentes principales
+
+### 9.2 Testing E2E
+- Configuración disponible
+- Scripts de prueba automatizados
+
+## 10. Despliegue
+
+### 10.1 Scripts Disponibles
+npm start # Desarrollo
+npm test # Testing
+npm run build # Producción
+
+
+### 10.2 Optimización
+- Minificación de código
+- Optimización de assets
+- Splitting de código
+
+## 11. Mantenimiento
+
+### 11.1 Logs y Debugging
+- Console logs estratégicos
+- Manejo de errores
+- Monitoreo de rendimiento
+
+### 11.2 Actualizaciones
+- Gestión de dependencias
+- Versionado semántico
+- Compatibilidad backwards
+
+## 12. Contribución
+- Guías de estilo de código
+- Proceso de PR
+- Convenciones de commits
+
+## 13. Recursos Adicionales
+- Create React App docs
+- React Router docs
+- Ant Design docs
+- Tailwind CSS docs
